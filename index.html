@@ -173,8 +173,8 @@
                 <!-- coupon div -->
                 <div class="bg-white p-5 rounded-lg">
                     <h2 class="text-[#111] mb-3 text-2xl font-medium">Have coupon?</h2>
-                    <input type="text" class="py-3 border rounded-lg border-gray-200 pl-2 pr-8" placeholder="Coupon code">
-                    <button disabled class="bg-[#E527B2] -ml-[68px] text-white p-3 rounded-r-lg">Apply</button>
+                    <input type="text" id="coupon-input" class="py-3 border rounded-lg border-gray-200 pl-2 pr-8" placeholder="Coupon code">
+                    <button disabled id="btn-apply" class="bg-[#E527B2] -ml-[68px] text-white p-3 rounded-r-lg">Apply</button>
                 </div>
 
                 <div class="bg-white px-4 py-8 rounded-lg mt-4">
@@ -187,7 +187,7 @@
                         <p class="text-[#111] text-lg font-medium">Total: <span class="text-gray-400"><span id="grand-total">0</span> Tk</span></p>
                     </div>
                     <div class="text-center -mb-12">
-                        <button disabled class="bg-[#E527B2] text-white rounded-lg px-10 py-2 border-none mt-12">Make Purchase</button>
+                        <button disabled id="btn-purchase" class="bg-[#E527B2] text-white rounded-lg px-10 py-2 border-none mt-12">Make Purchase</button>
                     </div>
                 </div>
             </div>

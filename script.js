@@ -7,6 +7,13 @@ document.getElementById('card_1').addEventListener('click', function(){
     const totalPrice = parseFloat(totalPriceString);
     total = totalPrice + price;
     setTotalPrice('total-price', total);
+    const buttonPurchase = document.getElementById('btn-purchase');
+
+    if(total > 0){
+        buttonPurchase.removeAttribute('disabled');
+    } else {
+        buttonPurchase.setAttribute('disabled', true);
+    }
 })
 
 document.getElementById('card_2').addEventListener('click', function(){
@@ -16,6 +23,13 @@ document.getElementById('card_2').addEventListener('click', function(){
     const totalPrice = parseFloat(totalPriceString);
     total = totalPrice + price;
     setTotalPrice('total-price', total);
+    const buttonPurchase = document.getElementById('btn-purchase');
+
+    if(total > 0){
+        buttonPurchase.removeAttribute('disabled');
+    } else {
+        buttonPurchase.setAttribute('disabled', true);
+    }
 })
 
 document.getElementById('card_3').addEventListener('click', function(){
@@ -25,6 +39,13 @@ document.getElementById('card_3').addEventListener('click', function(){
     const totalPrice = parseFloat(totalPriceString);
     total = totalPrice + price;
     setTotalPrice('total-price', total);
+    const buttonPurchase = document.getElementById('btn-purchase');
+
+    if(total > 0){
+    buttonPurchase.removeAttribute('disabled');
+    } else {
+        buttonPurchase.setAttribute('disabled', true);
+    }
 })
 
 document.getElementById('card_4').addEventListener('click', function(){
@@ -34,6 +55,13 @@ document.getElementById('card_4').addEventListener('click', function(){
     const totalPrice = parseFloat(totalPriceString);
     total = totalPrice + price;
     setTotalPrice('total-price', total);
+    const buttonPurchase = document.getElementById('btn-purchase');
+
+    if(total > 0){
+    buttonPurchase.removeAttribute('disabled');
+    } else {
+        buttonPurchase.setAttribute('disabled', true);
+    }  
 })
 
 document.getElementById('card_5').addEventListener('click', function(){
@@ -43,6 +71,13 @@ document.getElementById('card_5').addEventListener('click', function(){
     const totalPrice = parseFloat(totalPriceString);
     total = totalPrice + price;
     setTotalPrice('total-price', total);
+    const buttonPurchase = document.getElementById('btn-purchase');
+
+    if(total > 0){
+    buttonPurchase.removeAttribute('disabled');
+    } else {
+        buttonPurchase.setAttribute('disabled', true);
+    }
 })
 
 document.getElementById('card_6').addEventListener('click', function(){
@@ -52,4 +87,27 @@ document.getElementById('card_6').addEventListener('click', function(){
     const totalPrice = parseFloat(totalPriceString);
     total = totalPrice + price;
     setTotalPrice('total-price', total);
+    const buttonPurchase = document.getElementById('btn-purchase');
+
+    if(total > 0){
+        buttonPurchase.removeAttribute('disabled');
+    } else {
+        buttonPurchase.setAttribute('disabled', true);
+    }
 })
+
+
+document.getElementById('coupon-input').addEventListener('keyup', function(event){
+    const coupon = event.target.value;
+    const apply = document.getElementById('btn-apply');
+    const currentTotalString = document.getElementById('total-price').innerText;
+    const currentTotal = parseFloat(currentTotalString);
+    
+    if((coupon === 'SELL200') && (currentTotal >= 200) ){
+        apply.removeAttribute('disabled');
+    } else {
+        apply.setAttribute('disabled', true);
+    }
+})
+
+
