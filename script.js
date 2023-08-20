@@ -146,6 +146,16 @@ document.getElementById('reset').addEventListener('click', function(){
     setValue('discount', 0);
     setValue('grand-total', 0);
 
+    const listItems = document.querySelectorAll('#selected li');
+
+    for (let i = 0; i < listItems.length; i++) {
+        const listItem = listItems[i];
+        const parent = document.querySelector('#selected');
+
+        parent.removeChild(listItem);
+  
+    }
+
    
 })
 
