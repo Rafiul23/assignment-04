@@ -81,6 +81,7 @@ document.getElementById('card_4').addEventListener('click', function(){
 })
 
 document.getElementById('card_5').addEventListener('click', function(){
+
     setElement('product_5', 'selected');
     const price = findPrice('price_5');
     const totalPriceString = document.getElementById('total-price').innerText;
@@ -137,6 +138,14 @@ document.getElementById('btn-apply').addEventListener('click', function(){
     } else {
         alert('Your coupon is not valid');
     }
+   
+})
+
+document.getElementById('reset').addEventListener('click', function(){
+    setValue('total-price', 0);
+    setValue('discount', 0);
+    setValue('grand-total', 0);
+
    
 })
 
