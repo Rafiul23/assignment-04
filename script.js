@@ -12,8 +12,10 @@ document.getElementById('card_1').addEventListener('click', function(){
 
     if(total >= 200){
         apply.removeAttribute('disabled');
+        apply.style.backgroundColor = '#e527b2';
     } else if(total > 0) {
         buttonPurchase.removeAttribute('disabled');
+        buttonPurchase.style.backgroundColor = '#e527b2';
     } else {
         buttonPurchase.setAttribute('disabled', true);
         apply.setAttribute('disabled', true);
@@ -32,8 +34,10 @@ document.getElementById('card_2').addEventListener('click', function(){
 
     if(total >= 200){
         apply.removeAttribute('disabled');
+        apply.style.backgroundColor = '#e527b2';
     } else if(total > 0) {
         buttonPurchase.removeAttribute('disabled');
+        buttonPurchase.style.backgroundColor = '#e527b2';
     } else {
         buttonPurchase.setAttribute('disabled', true);
         apply.setAttribute('disabled', true);
@@ -52,8 +56,10 @@ document.getElementById('card_3').addEventListener('click', function(){
 
     if(total >= 200){
         apply.removeAttribute('disabled');
+        apply.style.backgroundColor = '#e527b2';
     } else if(total > 0) {
         buttonPurchase.removeAttribute('disabled');
+        buttonPurchase.style.backgroundColor = '#e527b2';
     } else {
         buttonPurchase.setAttribute('disabled', true);
         apply.setAttribute('disabled', true);
@@ -72,8 +78,10 @@ document.getElementById('card_4').addEventListener('click', function(){
 
     if(total >= 200){
         apply.removeAttribute('disabled');
+        apply.style.backgroundColor = '#e527b2';
     } else if(total > 0) {
         buttonPurchase.removeAttribute('disabled');
+        buttonPurchase.style.backgroundColor = '#e527b2';
     } else {
         buttonPurchase.setAttribute('disabled', true);
         apply.setAttribute('disabled', true);
@@ -93,8 +101,10 @@ document.getElementById('card_5').addEventListener('click', function(){
 
     if(total >= 200){
         apply.removeAttribute('disabled');
+        apply.style.backgroundColor = '#e527b2';
     } else if(total > 0) {
         buttonPurchase.removeAttribute('disabled');
+        buttonPurchase.style.backgroundColor = '#e527b2';
     } else {
         buttonPurchase.setAttribute('disabled', true);
         apply.setAttribute('disabled', true);
@@ -113,8 +123,10 @@ document.getElementById('card_6').addEventListener('click', function(){
 
     if(total >= 200){
         apply.removeAttribute('disabled');
+        apply.style.backgroundColor = '#e527b2';
     } else if(total > 0) {
         buttonPurchase.removeAttribute('disabled');
+        buttonPurchase.style.backgroundColor = '#e527b2';
     } else {
         buttonPurchase.setAttribute('disabled', true);
         apply.setAttribute('disabled', true);
