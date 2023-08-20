@@ -1,12 +1,12 @@
 let total = 0;
-let grandTotal = 0;
+
 document.getElementById('card_1').addEventListener('click', function(){
     setElement('product_1', 'selected');
     const price = findPrice('price_1');
     const totalPriceString = document.getElementById('total-price').innerText;
     const totalPrice = parseFloat(totalPriceString);
     total = totalPrice + price;
-    setTotalPrice('total-price', total);
+    setValue('total-price', total);
     const buttonPurchase = document.getElementById('btn-purchase');
 
     if(total > 0){
@@ -22,7 +22,7 @@ document.getElementById('card_2').addEventListener('click', function(){
     const totalPriceString = document.getElementById('total-price').innerText;
     const totalPrice = parseFloat(totalPriceString);
     total = totalPrice + price;
-    setTotalPrice('total-price', total);
+    setValue('total-price', total);
     const buttonPurchase = document.getElementById('btn-purchase');
 
     if(total > 0){
@@ -38,7 +38,7 @@ document.getElementById('card_3').addEventListener('click', function(){
     const totalPriceString = document.getElementById('total-price').innerText;
     const totalPrice = parseFloat(totalPriceString);
     total = totalPrice + price;
-    setTotalPrice('total-price', total);
+    setValue('total-price', total);
     const buttonPurchase = document.getElementById('btn-purchase');
 
     if(total > 0){
@@ -54,7 +54,7 @@ document.getElementById('card_4').addEventListener('click', function(){
     const totalPriceString = document.getElementById('total-price').innerText;
     const totalPrice = parseFloat(totalPriceString);
     total = totalPrice + price;
-    setTotalPrice('total-price', total);
+    setValue('total-price', total);
     const buttonPurchase = document.getElementById('btn-purchase');
 
     if(total > 0){
@@ -70,7 +70,7 @@ document.getElementById('card_5').addEventListener('click', function(){
     const totalPriceString = document.getElementById('total-price').innerText;
     const totalPrice = parseFloat(totalPriceString);
     total = totalPrice + price;
-    setTotalPrice('total-price', total);
+    setValue('total-price', total);
     const buttonPurchase = document.getElementById('btn-purchase');
 
     if(total > 0){
@@ -86,7 +86,7 @@ document.getElementById('card_6').addEventListener('click', function(){
     const totalPriceString = document.getElementById('total-price').innerText;
     const totalPrice = parseFloat(totalPriceString);
     total = totalPrice + price;
-    setTotalPrice('total-price', total);
+    setValue('total-price', total);
     const buttonPurchase = document.getElementById('btn-purchase');
 
     if(total > 0){
@@ -97,13 +97,12 @@ document.getElementById('card_6').addEventListener('click', function(){
 })
 
 
-document.getElementById('coupon-input').addEventListener('keyup', function(event){
-    const coupon = event.target.value;
-    const apply = document.getElementById('btn-apply');
+document.getElementById('coupon-input').addEventListener('keyup', function(){
+   
     const currentTotalString = document.getElementById('total-price').innerText;
     const currentTotal = parseFloat(currentTotalString);
     
-    if((coupon === 'SELL200') && (currentTotal >= 200) ){
+    if(currentTotal >= 200 ){
         apply.removeAttribute('disabled');
     } else {
         apply.setAttribute('disabled', true);
@@ -111,13 +110,21 @@ document.getElementById('coupon-input').addEventListener('keyup', function(event
 })
 
 document.getElementById('btn-apply').addEventListener('click', function(){
-    const currentTotalString = document.getElementById('total-price').innerText;
-    const currentTotal = parseFloat(currentTotalString);
-    const percentagee = 0.2;
-    const discount = currentTotal * percentagee;
-    const grandTotal = currentTotal - discount;
-    setTotalPrice('discount', discount);
-    setTotalPrice('grand-total', grandTotal);
+
+    const coupon = getInputValueById('coupon-input');
+     
+    if(coupon === 'SELL200'){
+        const currentTotalString = document.getElementById('total-price').innerText;
+        const currentTotal = parseFloat(currentTotalString);
+        const percentagee = 0.2;
+        const discount = currentTotal * percentagee;
+        const grandTotal = currentTotal - discount;
+        setValue('discount', discount);
+        setValue('grand-total', grandTotal);
+    } else {
+        alert('Your coupon is not valid');
+    }
+   
 })
 
 

@@ -15,7 +15,13 @@ function setElement(productId, selectId){
     selected.appendChild(li);
 }
 
-function setTotalPrice(id, totalPrice){
+function getInputValueById(id){
+    const el = document.getElementById(id);
+    const inputValue = el.value;
+    return inputValue;
+}
+
+function setValue(id, totalPrice){
     const el = document.getElementById(id);
     el.innerText = totalPrice;
 }
