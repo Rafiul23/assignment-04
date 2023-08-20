@@ -39,16 +39,17 @@
 
     <main class="bg-[#F8F8F8]">
         
-        <div>
+      <section class="py-32">
+        <div class="ml-10 flex">
             <!-- product div -->
-            <div>
+            <div class="w-3/4">
 
-                <h2 class="text-[#111] text-3xl font-bold block">Kitchenware</h2>
+                <h2 class="text-[#111] mb-5 text-3xl font-semibold block">Kitchenware</h2>
                 <!-- cards div -->
 
                 <div class="grid grid-cols-1 md:grid-cols-3">
                     <!-- card 1 -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card w-72 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -66,7 +67,7 @@
                     </div>
 
                     <!-- card 2 -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card w-72 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -84,7 +85,7 @@
                     </div>
 
                     <!-- card 3 -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card w-72 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -104,12 +105,12 @@
                     
                 </div>
 
-                <h2 class="text-[#111] text-3xl font-bold block">Sportswear</h2>
+                <h2 class="text-[#111] my-5 text-3xl font-semibold block">Sportswear</h2>
                 <!-- cards div -->
 
                 <div class="grid grid-cols-1 md:grid-cols-3">
                     <!-- card 4 -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card w-72 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod4.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -127,7 +128,7 @@
                     </div>
 
                     <!-- card 5 -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card w-72 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod5.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -145,7 +146,7 @@
                     </div>
 
                     <!-- card 6 -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card w-72 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod6.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -168,10 +169,27 @@
             </div>
 
             <!-- order div -->
-            <div>
-
+            <div class="w-1/4 mr-5 mt-[56px]">
+                <!-- coupon div -->
+                <div class="bg-white p-5 rounded-lg">
+                    <h2 class="text-[#111] mb-3 text-2xl font-medium">Have coupon?</h2>
+                    <input type="text" class="py-3 border rounded-lg border-gray-200 pl-2 pr-8" placeholder="Coupon code">
+                    <button disabled class="bg-[#E527B2] -ml-[68px] text-white p-3 rounded-r-lg">Apply</button>
+                </div>
+                <div class="bg-white px-4 py-8 rounded-lg mt-4">
+                    <div id="selected"></div>
+                    <div>
+                        <p class="text-[#111] text-lg font-medium">Total price: <span class="text-gray-400">0 Tk</span></p>
+                        <p class="text-[#111] text-lg font-medium">Discount: <span class="text-gray-400">0 Tk</span></p>
+                        <p class="text-[#111] text-lg font-medium">Total: <span class="text-gray-400">0 Tk</span></p>
+                    </div>
+                    <div class="text-center -mb-12">
+                        <button disabled class="bg-[#E527B2] text-white rounded-lg px-10 py-2 border-none mt-12">Make Purchase</button>
+                    </div>
+                </div>
             </div>
         </div>
+      </section>
     
     </main>
 
