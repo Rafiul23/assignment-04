@@ -6,12 +6,13 @@ function findPrice(id){
 }
 
 function setElement(productId, selectId){
-    const product = document.getElementById(productId);
+    const product = document.getElementById(productId).innerText;
+    const selected = document.getElementById(selectId);
     const li = document.createElement('li');
-    li.innerText = product.innerText;
+    const count = selected.childElementCount;
+    li.innerHTML = `${count + 1}. ${product}`;
     li.style.color = '#111';
     li.style.fontWeight = 'bold';
-    const selected = document.getElementById(selectId);
     selected.appendChild(li);
 }
 
