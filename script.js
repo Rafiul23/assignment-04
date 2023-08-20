@@ -8,11 +8,15 @@ document.getElementById('card_1').addEventListener('click', function(){
     total = totalPrice + price;
     setValue('total-price', total);
     const buttonPurchase = document.getElementById('btn-purchase');
+    const apply = document.getElementById('btn-apply');
 
-    if(total > 0){
+    if(total >= 200){
+        apply.removeAttribute('disabled');
+    } else if(total > 0) {
         buttonPurchase.removeAttribute('disabled');
     } else {
         buttonPurchase.setAttribute('disabled', true);
+        apply.setAttribute('disabled', true);
     }
 })
 
@@ -24,11 +28,15 @@ document.getElementById('card_2').addEventListener('click', function(){
     total = totalPrice + price;
     setValue('total-price', total);
     const buttonPurchase = document.getElementById('btn-purchase');
+    const apply = document.getElementById('btn-apply');
 
-    if(total > 0){
+    if(total >= 200){
+        apply.removeAttribute('disabled');
+    } else if(total > 0) {
         buttonPurchase.removeAttribute('disabled');
     } else {
         buttonPurchase.setAttribute('disabled', true);
+        apply.setAttribute('disabled', true);
     }
 })
 
@@ -40,11 +48,15 @@ document.getElementById('card_3').addEventListener('click', function(){
     total = totalPrice + price;
     setValue('total-price', total);
     const buttonPurchase = document.getElementById('btn-purchase');
+    const apply = document.getElementById('btn-apply');
 
-    if(total > 0){
-    buttonPurchase.removeAttribute('disabled');
+    if(total >= 200){
+        apply.removeAttribute('disabled');
+    } else if(total > 0) {
+        buttonPurchase.removeAttribute('disabled');
     } else {
         buttonPurchase.setAttribute('disabled', true);
+        apply.setAttribute('disabled', true);
     }
 })
 
@@ -56,12 +68,16 @@ document.getElementById('card_4').addEventListener('click', function(){
     total = totalPrice + price;
     setValue('total-price', total);
     const buttonPurchase = document.getElementById('btn-purchase');
+    const apply = document.getElementById('btn-apply');
 
-    if(total > 0){
-    buttonPurchase.removeAttribute('disabled');
+    if(total >= 200){
+        apply.removeAttribute('disabled');
+    } else if(total > 0) {
+        buttonPurchase.removeAttribute('disabled');
     } else {
         buttonPurchase.setAttribute('disabled', true);
-    }  
+        apply.setAttribute('disabled', true);
+    }
 })
 
 document.getElementById('card_5').addEventListener('click', function(){
@@ -72,11 +88,15 @@ document.getElementById('card_5').addEventListener('click', function(){
     total = totalPrice + price;
     setValue('total-price', total);
     const buttonPurchase = document.getElementById('btn-purchase');
+    const apply = document.getElementById('btn-apply');
 
-    if(total > 0){
-    buttonPurchase.removeAttribute('disabled');
+    if(total >= 200){
+        apply.removeAttribute('disabled');
+    } else if(total > 0) {
+        buttonPurchase.removeAttribute('disabled');
     } else {
         buttonPurchase.setAttribute('disabled', true);
+        apply.setAttribute('disabled', true);
     }
 })
 
@@ -88,26 +108,19 @@ document.getElementById('card_6').addEventListener('click', function(){
     total = totalPrice + price;
     setValue('total-price', total);
     const buttonPurchase = document.getElementById('btn-purchase');
+    const apply = document.getElementById('btn-apply');
 
-    if(total > 0){
+    if(total >= 200){
+        apply.removeAttribute('disabled');
+    } else if(total > 0) {
         buttonPurchase.removeAttribute('disabled');
     } else {
         buttonPurchase.setAttribute('disabled', true);
-    }
-})
-
-
-document.getElementById('coupon-input').addEventListener('keyup', function(){
-   
-    const currentTotalString = document.getElementById('total-price').innerText;
-    const currentTotal = parseFloat(currentTotalString);
-    
-    if(currentTotal >= 200 ){
-        apply.removeAttribute('disabled');
-    } else {
         apply.setAttribute('disabled', true);
     }
 })
+
+
 
 document.getElementById('btn-apply').addEventListener('click', function(){
 
