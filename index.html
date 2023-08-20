@@ -187,7 +187,20 @@
                         <p class="text-[#111] text-lg font-medium">Total: <span class="text-gray-400"><span id="grand-total">0</span> Tk</span></p>
                     </div>
                     <div class="text-center -mb-12">
-                        <button disabled id="btn-purchase" class="bg-[#E527B2] text-white rounded-lg px-10 py-2 border-none mt-12">Make Purchase</button>
+                        <button disabled id="btn-purchase" onclick="my_modal_5.showModal()" class="bg-[#E527B2] text-white rounded-lg px-10 py-2 border-none mt-12">Make Purchase</button>
+                        <!-- Open the modal using ID.showModal() method -->
+                        
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <form method="dialog" class="modal-box">
+                        <img class="ml-36" src="./images/congo.png" alt=""> 
+                        <h1 class="font-bold text-[#111] text-center text-4xl">Congratulations</h1>
+                        <p class="py-4 text-center text-gray-600">Your Purchase the product</p>
+                        <div class="text-center">
+                         <!-- if there is a button in form, it will close the modal -->
+                         <button class="bg-[#E527B2] text-white rounded-lg px-10 py-2 border-none">Go Home</button>
+                       </div>
+                      </form>
+                    </dialog>
                     </div>
                 </div>
             </div>
