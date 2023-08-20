@@ -165,10 +165,14 @@ document.getElementById('reset').addEventListener('click', function(){
         const parent = document.querySelector('#selected');
 
         parent.removeChild(listItem);
-  
     }
+    const buttonPurchase = document.getElementById('btn-purchase');
+    const apply = document.getElementById('btn-apply');
 
-   
+    apply.style.backgroundColor = 'rgb(156 163 175)';
+    buttonPurchase.style.backgroundColor = 'rgb(156 163 175)';
+    apply.setAttribute('disabled', true);
+    buttonPurchase.setAttribute('disabled', true);
 })
 
 
