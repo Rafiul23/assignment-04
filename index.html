@@ -24,32 +24,32 @@
 </head>
 <body class="work-sans">
     <!-- banner starts here -->
-    <header class="bg-[#F9F6E2] md:h-[500px] lg:h-[550px] flex justify-around flex-col-reverse md:flex-row">
+    <header class="bg-[#F9F6E2] h-[480px] md:h-[500px] lg:h-[550px] flex justify-around md:justify-around flex-col-reverse md:flex-row">
 
-       <div class="my-auto text-center space-y-10">
-        <h4 class="text-[#111] font-medium text-3xl">---SALE FEVER---</h4>
-        <h1 class="text-[#111] font-bold text-5xl">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span> </h1>
-        <p class="text-[#111] font-medium text-2xl">Use Promo Code <button class="bg-[#e527b2] rounded-lg border-none ml-2 p-2 text-white text-xl">SELL200</button></p>
+       <div class="my-auto lg:ml-10 text-center space-y-5 md:space-y-10">
+        <h4 class="text-[#111] font-medium text-lg md:text-2xl lg:text-3xl">---SALE FEVER---</h4>
+        <h1 class="text-[#111] font-bold text-xl md:text-3xl lg:text-5xl">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span> </h1>
+        <p class="text-[#111] font-medium text-lg md:text-2xl">Use Promo Code <button class="bg-[#e527b2] rounded-lg border-none ml-2 p-1 md:p-2 text-white text-lg md:text-xl">SELL200</button></p>
        </div>
 
-       <div class="my-auto">
-        <img src="./images/Summer 1.png" class="w-[400px] h-[400px]" alt="">
+       <div class="mx-auto md:my-auto">
+        <img src="./images/Summer 1.png" class="w-[200px] h-[200px] md:w-[400px] md:h-[400px]" alt="">
        </div>
     </header>
 
     <main class="bg-[#F8F8F8]">
         
-      <section class="py-32">
-        <div class="ml-10 flex">
+      <section class="lg:py-32 md:py-10">
+        <div class="lg:ml-10 flex flex-col lg:flex-row md:flex-col">
             <!-- product div -->
-            <div class="w-3/4">
+            <div class="md:w-full w-full lg:w-3/4">
 
-                <h2 class="text-[#111] mb-5 text-3xl font-semibold block">Kitchenware</h2>
+                <h2 class="text-[#111] mb-5 text-2xl md:text-2xl lg:text-3xl font-semibold block">Kitchenware</h2>
                 <!-- cards div -->
 
-                <div class="grid grid-cols-1 md:grid-cols-3">
+                <div class="grid grid-cols-1 gap-2 md:gap-1 md:grid-cols-3">
                     <!-- card 1 -->
-                    <div id="card_1" class="card w-72 bg-base-100 shadow-xl">
+                    <div id="card_1" class="card w-full md:w-60 lg:w-72 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -67,7 +67,7 @@
                     </div>
 
                     <!-- card 2 -->
-                    <div id="card_2" class="card w-72 bg-base-100 shadow-xl">
+                    <div id="card_2" class="card w-full md:w-60 lg:w-72 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -85,7 +85,7 @@
                     </div>
 
                     <!-- card 3 -->
-                    <div id="card_3" class="card w-72 bg-base-100 shadow-xl">
+                    <div id="card_3" class="card w-full md:w-60 lg:w-72 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -105,12 +105,12 @@
                     
                 </div>
 
-                <h2 class="text-[#111] my-5 text-3xl font-semibold block">Sportswear</h2>
+                <h2 class="text-[#111] my-5 md:text-2xl text-2xl lg:text-3xl font-semibold block">Sportswear</h2>
                 <!-- cards div -->
 
-                <div class="grid grid-cols-1 md:grid-cols-3">
+                <div class="grid grid-cols-1 gap-2 md:gap-1 md:grid-cols-3">
                     <!-- card 4 -->
-                    <div id="card_4" class="card w-72 bg-base-100 shadow-xl">
+                    <div id="card_4" class="card w-full md:w-60 lg:w-72 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod4.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -128,7 +128,7 @@
                     </div>
 
                     <!-- card 5 -->
-                    <div id="card_5" class="card w-72 bg-base-100 shadow-xl">
+                    <div id="card_5" class="card w-full md:w-60 lg:w-72 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod5.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -146,7 +146,7 @@
                     </div>
 
                     <!-- card 6 -->
-                    <div id="card_6" class="card w-72 bg-base-100 shadow-xl">
+                    <div id="card_6" class="card w-full md:w-60 lg:w-72 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod6.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -158,7 +158,7 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                               </div>
-                          <h2 class="card-title" id="product_6">Sports cates</h2>
+                          <h2 class="card-title" id="product_6">Sports Cates</h2>
                           <p><span id="price_6">159.00</span> TK</p>
                         </div>
 
@@ -169,7 +169,7 @@
             </div>
 
             <!-- order div -->
-            <div class="w-1/4 mr-5 mt-[56px]">
+            <div class="lg:w-1/4 w-full md:w-full md:mt-5 mt-5 lg:mr-5 lg:mt-[56px]">
                 <!-- coupon div -->
                 <div class="bg-white p-5 rounded-lg">
                     <h2 class="text-[#111] mb-3 text-2xl font-medium">Have coupon?</h2>
