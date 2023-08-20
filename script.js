@@ -110,4 +110,14 @@ document.getElementById('coupon-input').addEventListener('keyup', function(event
     }
 })
 
+document.getElementById('btn-apply').addEventListener('click', function(){
+    const currentTotalString = document.getElementById('total-price').innerText;
+    const currentTotal = parseFloat(currentTotalString);
+    const percentagee = 0.2;
+    const discount = currentTotal * percentagee;
+    const grandTotal = currentTotal - discount;
+    setTotalPrice('discount', discount);
+    setTotalPrice('grand-total', grandTotal);
+})
+
 
